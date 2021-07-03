@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <title>projetoJ2.1</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styleMapa.css') }}">
+</head>
+
+<body>
+    <div class="simpleProcess">
+        <p class="textOfImage"></p>
+        <img src="{{url_for('static', filename='src/01.PNG')}}" class="imageOfProcess">
+    </div>
+    <div class="simpleProcess">
+        <p class="textOfImage"></p>
+        <img src="{{url_for('static', filename='src/02.PNG')}}" class="imageOfProcess">
+    </div>
+    <div class="simpleProcess">
+        <p class="textOfImage"></p>
+        <img src="{{url_for('static', filename='src/03.PNG')}}" class="imageOfProcess">
+    </div>
+    <div class="simpleProcess">
+        <p class="textOfImage"></p>
+        <img src="{{url_for('static', filename='src/04.PNG')}}" class="imageOfProcess">
+    </div>
+    <div class="simpleProcess">
+        <p class="textOfImage"></p>
+        <img src="{{url_for('static', filename='src/05.PNG')}}" class="imageOfProcess">
+    </div>
+    <div class="simpleProcess">
+        <p class="textOfImage"></p>
+        <img src="{{url_for('static', filename='src/06.PNG')}}" class="imageOfProcess">
+    </div>
+    <div class="simpleProcess">
+        <p class="textOfImage"></p>
+        <img src="{{url_for('static', filename='src/07.PNG')}}" class="imageOfProcess">
+    </div>
+    <div class="simpleProcess">
+        <p class="textOfImage"></p>
+        <img src="{{url_for('static', filename='src/08.PNG')}}" class="imageOfProcess">
+    </div>
+    <div class="simpleProcess">
+        <p class="textOfImage">OPA</p>
+        <img src="{{url_for('static', filename='src/09.PNG')}}" class="imageOfProcess">
+    </div>
+    
+    <div class="formPopUp" id="getForm">
+        <form class="formOfProcess" action="">
+        <a>Caixa do processo</a>
+        <input type="text" id="mainText" class="itemOfForm"/>
+        <a>Centralização do texto</a>
+        <input type="number" id="mainMargin" class="itemOfForm"></input>
+        <a>Tamanho Fonte</a>
+        <input type="number" id="mainFontSize" class="itemOfForm"/>
+        
+        <button id="buttonClickToAssignText">CLICAR</button>
+        <button id="buttonClickToClose">FECHAR</button>
+        
+        
+        
+        </form>
+    </div>
+
+
+    <script src="{{ url_for('static', filename='script/scriptMapa.js') }}"></script>
+</body>
